@@ -1,0 +1,26 @@
+header {
+  width: 100%;
+
+  text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin: 37px 110px 0 0;
+
+  }
+
+  &.first-of-type {
+    margin-left: 102px;
+  }
+
+&.hover {
+  cursor: pointer;
+  color: gray;
+}
+}
+
+
+
+

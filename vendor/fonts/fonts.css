@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'PlayfairDisplaySC';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./PlayfairDisplaySC-Regular.ttf") format("woff2"),
+        url("./PlayfairDisplaySC-Regular.ttf") format("woff");
+}
+
+@font-face {
+    font-family: 'PlayfairDisplaySC';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./PlayfairDisplaySC-Medium.ttf") format("woff2"),
+        url("./PlayfairDisplaySC-Medium.ttf") format("woff");
+}
+
+@font-face {
+    font-family: 'PlayfairDisplaySC';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("./PlayfairDisplaySC.ttf") format("woff2"),
+        url("./PlayfairDisplaySC.ttf") format("woff");
+}
+

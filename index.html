@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="stylesheet" href="./vendor/vendor.css">
+
+    <title>Оптовая продажа свежего и замороженного мяса</title>
+</head>
+
+<body class="root">
+
+    <header class="header">
+        <div class="header__greeting">
+            <h2 class="header__title">СПК "Продвижение" </h2>
+
+      
+            <p class='header__subtitle'>г. Свободный Амурской области</p>
+           
+            
+
+           
+        </div>
+        </div>
+        <div class="header__menu">       
+        <div class="header__text"> 
+            <h2 class="header__text_item">Связаться с нами через мессенджеры</h2>
+            <img class="header__text-icon" src="./src/image/telegram.png" />
+            <img class="header__text-icon" src="./src/image/whatsapp.png" />
+            <img class="header__text-icon" src="./src/image/viber.png" />
+
+        </div>
+        <div class="header__text">
+            <p class="header__text_item header__text-number">+7(999)900-90-90</p>
+            <p class="header__text_item">Ежедневно с 10:00 до 18:00</p>
+            <span class="header__text-span">(по времени Амурской области)</span> 
+            
+        <button class="btn btn__view_header">Заказать звонок</button>
+        </div>
+    </header>
+    <main class="about">
+
+        <div class="about__info">
+            <h1 class="about__title">Мясо</h1>
+            <h2 class="about__subtitle">оптом и в розницу</h2>
+            <div class="about__line"></div>
+            <p class="about__text">Охлажденная и замороженная продукция — курица, цыплята бройлеры, свинина, индейка,
+                говядина.В ассортименте основная разделка, субпродукты, тушки, полуфабрикаты.
+            <h2 class="about__subtitle_list"> Осуществляем оптовые поставки для коммерческих заведений:</h2>
+            <ul class="about__list">
+                <li>мясокомбинаты и предприятия для дальнейшей переработки мяса;</li>
+                <li>гастрономы, мясные магазины, сетевые супермаркеты;</li>
+                <li>сегменты HoReCa - рестораны, кафе, столовые, коммерческие заведения общепита, кухни отелей;</li>
+            </ul>
+            <button class="btn btn__view_about">Связаться с нами</button>
+        </div>
+        <img class="about__background" src="./src/image/background2.jpg" alt="meat"> </div>
+        <popup class="popup">
+
+            <div class="popup__container">
+                
+                <form class="popup__form" id="form" method="post" type="submit" novalidate>
+<h2 class="popup__title">Заполните форму</h2>
+                    <div class="popup__form_block">
+                        <label for="formSubject" class="popup__form_label">Тема сообщения</label>
+                        <input class="popup__form-input" type="text" id="formSubject" name="subject" required>
+                    </div>
+
+                    <div class="popup__form_block"></label>
+                        <label for="formName" class="popup__form_label" >Введите свое имя*</label>
+
+                        <input class="popup__form-input _req" type="text" id="formName" name='name' minlength="2" required>
+
+                    </div>
+
+                    <div class="popup__form_block">
+                        <label for="formNumber" class="popup__form_label">Ваш номер телефона*</label>
+
+                        <input class="popup__form-input _req _number" type="text" id="formNumber" name="number" >
+
+                    </div>
+
+                    <div class="popup__form_block">
+                        <label for="formMessage" class="popup__form_label">Здесь вы можете оставить сообщение или задать
+                            вопрос, который вас интересует</label>
+
+                        <input class="popup__form-input-text " type="text" id="formText" name="message" >
+
+                    </div>
+<div class="checkbox">
+                  <!--  <input type="checkbox" class="checkbox__input _req" name="agreement" id="agreement" checked>
+                <label for="agreement" class="checkbox__label">Подтверждаю согласие на обработку персональных данных</label>
+                </div>-->
+                                    <button type="submit" class="btn btn__view_send btn__view_send-invalid">Отправить</button>
+
+<p class="popup__form-note">* - Обязательные поля</p>
+                </form>
+
+                <button class="btn btn__view_close"></button>
+            </div>
+        </popup>
+    </main>
+
+    </main>
+<footer class="footer">
+    <div class="footer__menu">
+        <ul class="footer__menu_list">
+            <li> Документы </li>
+        </ul>
+    </div>  
+    <p class="header__data"></p> 
+    <p class="header__time"></p>
+</footer>
+    <script type="module" src="./Scripts/api.js"></script>
+    <script type="module" src="./Scripts/index.js"></script>
+</body>
+
+</html>
