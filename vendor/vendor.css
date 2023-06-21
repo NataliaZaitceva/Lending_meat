@@ -315,8 +315,27 @@ cursor: none;
   transition: opacity 0.3s linear;
 }
 
-.popup__form *{
+.popup__form {
   outline: none;
+}
+
+.error {
+color: red;
+font-size: 9px;
+margin-top: 0;
+}
+
+.error:valid {
+  display: none;
+}
+
+.popup__form-input-error {
+  border: red 2px solid;
+}
+
+
+.popup__form-input-error:valid {
+  border: #000000 1px solid;
 }
 
 

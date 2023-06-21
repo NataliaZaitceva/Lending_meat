@@ -65,29 +65,30 @@
 <h2 class="popup__title">Заполните форму</h2>
                     <div class="popup__form_block">
                         <label for="formSubject" class="popup__form_label">Тема сообщения</label>
-                        <input class="popup__form-input" type="text" id="formSubject" name="subject" required>
+                        <input class="popup__form-input" type="text" id="formSubject" name="subject" minlength="2" maxlength="30" required>
+                   <span class="error" id="subjest-error"></span>
                     </div>
 
                     <div class="popup__form_block"></label>
-                        <label for="formName" class="popup__form_label" >Введите свое имя*</label>
+                        <label for="formName" class="popup__form_label" >Введите свое имя</label>
 
-                        <input class="popup__form-input _req" type="text" id="formName" name='name' minlength="2" required>
-
+                        <input class="popup__form-input _req" type="text" id="formName" name='name' minlength="2" maxlength="30" required>
+                        <span class="error" id="formName-error"></span>
                     </div>
 
                     <div class="popup__form_block">
-                        <label for="formNumber" class="popup__form_label">Ваш номер телефона*</label>
+                        <label for="tel" class="popup__form_label">Ваш номер телефона*</label>
 
-                        <input class="popup__form-input _req _number" type="text" id="formNumber" name="number" >
-
+                        <input class="popup__form-input _req _number" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" type="tel" id="tel" name="tel" required>
+                        <span class="error" id="tel-error"></span>
                     </div>
 
                     <div class="popup__form_block">
                         <label for="formMessage" class="popup__form_label">Здесь вы можете оставить сообщение или задать
                             вопрос, который вас интересует</label>
 
-                        <input class="popup__form-input-text " type="text" id="formText" name="message" >
-
+                        <input class="popup__form-input-text " type="text" id="formText" name="message">
+                        <span class="error" id="formText-error"></span>
                     </div>
 <div class="checkbox">
                   <!--  <input type="checkbox" class="checkbox__input _req" name="agreement" id="agreement" checked>
@@ -95,7 +96,6 @@
                 </div>-->
                                     <button type="submit" class="btn btn__view_send btn__view_send-invalid">Отправить</button>
 
-<p class="popup__form-note">* - Обязательные поля</p>
                 </form>
 
                 <button class="btn btn__view_close"></button>
