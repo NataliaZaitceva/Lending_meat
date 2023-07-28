@@ -61,12 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
-  function numberTest(input) {
-    return !/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/.test(
-      input.value
-    );
-  }
-
   async function formSend(e) {
     e.preventDefault();
 

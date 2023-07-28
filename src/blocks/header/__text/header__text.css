@@ -1,0 +1,6 @@
+.header__text {
+    flex-direction: row;
+  margin: 37px auto 20px 0;
+  z-index: 1;
+
+}

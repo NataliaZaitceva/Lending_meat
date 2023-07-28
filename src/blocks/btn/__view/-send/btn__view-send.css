@@ -1,0 +1,16 @@
+
+.btn__view_send {
+    width: 100%;
+    height: 20px;
+    letter-spacing: 2px;
+  position: relative;
+  cursor: none;
+  }
+
+  .btn__view_send-valid {
+  
+    background-color: #835D13;
+    color: antiquewhite;
+    cursor: pointer;
+  }
+  

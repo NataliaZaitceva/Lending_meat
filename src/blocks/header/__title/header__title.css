@@ -1,0 +1,10 @@
+.header__title {
+    margin-top: 20px;
+  font-size: 43px;
+  letter-spacing: 2px;
+  text-align: center;
+  }
+
+  .header__text:hover {
+    color: gainsboro;
+  }

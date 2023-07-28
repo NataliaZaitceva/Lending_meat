@@ -1,0 +1,10 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 50px;
+    border-bottom: 1px solid wheat;
+  
+    
+  }

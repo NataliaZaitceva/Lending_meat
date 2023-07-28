@@ -1,0 +1,9 @@
+.about__subtitle_list{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 29px;
+    margin-top: 0; 
+    max-width: 600px;
+    text-align: justify;
+  }
