@@ -1,0 +1,4 @@
+.gallery__image {
+width: 420px;
+transition: transform 0.3s ease;
+}

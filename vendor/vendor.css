@@ -6,6 +6,7 @@
 @import url(../src/blocks/about/__subtitle/_list/about__subtitle_list.css);
 @import url(../src/blocks/about/__text/about__text.css);
 @import url(../src/blocks/about/__title/about__title.css);
+@import url(../src/blocks/about/__list/about__list.css);
 @import url(../src/blocks/about/about.css);
 @import url(../src/blocks/btn/__view/-send/btn__view-send.css);
 @import url(../src/blocks/btn/__view/_about/btn__view_about.css);
@@ -13,14 +14,18 @@
 @import url(../src/blocks/btn/__view/_header/btn__view_header.css);
 @import url(../src/blocks/btn/btn.css);
 @import url(../src/blocks/error/error.css);
+@import url(../src/blocks/header/header.css);
 @import url(../src/blocks/header/__greeting/header__greeting.css);
 @import url(../src/blocks/header/__menu/header__menu.css);
+@import url(../src/blocks/header/__link/header__link.css);
 @import url(../src/blocks/header/__subtitle/header__subtitle.css);
 @import url(../src/blocks/header/__text/-icon/header__text-icon.css);
 @import url(../src/blocks/header/__text/-number/header__text-number.css);
 @import url(../src/blocks/header/__text/-span/header__text-span.css);
 @import url(../src/blocks/header/__text/_item/header__text-item.css);
 @import url(../src/blocks/header/__text/header__text.css);
+@import url(../src/blocks/header/__text/-span/header__text_span.css);
+@import url(../src/blocks/popup/popup.css);
 @import url(../src/blocks/popup/__container/popup__container.css);
 @import url(../src/blocks/popup/__form/-input/-error/popup__form-input-error.css);
 @import url(../src/blocks/popup/__form/-input/-text/popup__form-input-text.css);
@@ -29,8 +34,14 @@
 @import url(../src/blocks/popup/__form/popup__form.css);
 @import url(../src/blocks/popup/__opened/popup__opened.css);
 @import url(../src/blocks/popup/__title/popup__title.css);
-@import url(../src/blocks/popup/popup.css);
+@import url(../src/blocks/popup/__confirm/popup__confirm.css);
+@import url(../src/blocks/popup/__text/popup__text.css);
+@import url(../src/blocks/popup/__form/_block/popup__form_block.css);
 @import url(../src/blocks/root/root.css);
+@import url(../src/blocks/gallery/gallery.css);
+@import url(../src/blocks/gallery/__image/gallery__image.css);
+@import url(../src/blocks/gallery/__image/-active/gallery__image-active.css);
+ @import url(../src/blocks/gallery/__image/-hidden/gallery__image-hidden.css);   
 
 
 

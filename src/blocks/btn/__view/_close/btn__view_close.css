@@ -2,13 +2,13 @@
     position: absolute;
     top: -42px;
     right: -42px;
-    background-image: url(../src/image/close.svg);
+    background-image: url(../../../../image/close.svg);
     background-size: 32px;
     width: 32px;
     height: 32px;
     display: block;
     border: none;
-    color: #FFFFFF;
+    color: #050505;
     background-color: beige;
     background-position: center;
     background-size: cover;

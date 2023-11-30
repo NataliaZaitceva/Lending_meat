@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
     <link rel="stylesheet" href="./vendor/normalize.css">
-    <link rel="stylesheet" href="./vendor/vendor.css">
+    <link rel="stylesheet" href="./vendor/vendor.css" type="text/css">
 
     <title>Оптовая продажа свежего и замороженного мяса</title>
 </head>
@@ -19,26 +20,27 @@
       
             <p class='header__subtitle'>г. Свободный Амурской области</p>
            
-            
-
-           
         </div>
         </div>
-        <div class="header__menu">       
-        <div class="header__text"> 
-            <h2 class="header__text_item">Связаться с нами через мессенджеры</h2>
+        <div class="header__menu">
+ <p class="header__text_item"><a href="#" class="header__link">О нас</a></p>
+             <p class="header__text_item" href="#"><a href="#" class="header__link">Актуальный прайс-лист</a></p>    
+       
+             <div class="header__text"> 
+            <p class="header__text_item">Связаться с нами<br> через мессенджеры</br></p>
             <img class="header__text-icon" src="./src/image/telegram.png" />
             <img class="header__text-icon" src="./src/image/whatsapp.png" />
             <img class="header__text-icon" src="./src/image/viber.png" />
 
         </div>
+
         <div class="header__text">
-            <p class="header__text_item header__text-number">+7(999)900-90-90</p>
-            <p class="header__text_item">Ежедневно с 10:00 до 18:00</p>
+            <p class="header__text_item">+7(999)900-90-90</p>
+            <p class="header__text_span">Ежедневно с 10:00 до 18:00</p>
             </div>
             
-        <button class="btn btn__view_header">Заказать звонок</button>
-       
+
+        </div>
     </header>
     <main class="about">
 
@@ -56,20 +58,23 @@
             </ul>
             <button class="btn btn__view_about">Связаться с нами</button>
 </div>
+
             <div class="about__info-list">
             <h2 class="about__subtitle">Почему выгодно работать с нами?</h2>
 
             <ul class="about__info-list">
+                <li class="about__info-text">Мы много лет работаем на рынке Амурской области. </li>
                 <li class="about__info-text">Работаем с разными формами платежей, в том числе и с НДС.</li>
                 <li class="about__info-text">Предлагаем гибкие условия сотрудничества.
                 </li>
                 <li class="about__info-text">Предоставляем всю необходимую документацию о товаре.</li>
                 <li class="about__info-text">Располагаем большим ассортиментом.</li>
                 <li class="about__info-text">Предлагаем низкие цены.</li>
+
             </ul>
         </div>
         <img class="about__background" src="./src/image/background2.jpg" alt="meat"> </div>
-        <popup class="popup">
+        <popup class="popup" id="popupcontainer">
 
             <div class="popup__container">
                 
@@ -103,14 +108,23 @@
                         <span class="error" id="formText-error"></span>
                     </div>
 <div class="checkbox">
-                  <!--  <input type="checkbox" class="checkbox__input _req" name="agreement" id="agreement" checked>
+                  <input type="checkbox" class="checkbox__input _req" name="agreement" id="agreement" checked>
                 <label for="agreement" class="checkbox__label">Подтверждаю согласие на обработку персональных данных</label>
-                </div>-->
+                </div>
                                     <button type="submit" class="btn btn__view_send btn__view_send-invalid">Отправить</button>
 
                 </form>
 
-                <button class="btn btn__view_close"></button>
+                <button class="btn btn__view_close" id="btnclose"></button>
+            </div>
+        </popup>
+        <popup class="popup" id="popupconfirm">
+           
+                <div class="popup__confirm">
+
+                    <P class="popup__text"> Спасибо за ваше сообщение! Мы перезвоним вам в ближайшее время</P>
+                </div>
+           <button class="btn btn__view_close" id="btnclose"></button>     
             </div>
         </popup>
     </main>
@@ -120,10 +134,10 @@
     <div class="footer__menu">
         <ul class="footer__menu_list">
             <li> Документы </li>
+            <li> Условия оплаты и доставки</li>
+
         </ul>
     </div>  
-    <p class="header__data"></p> 
-    <p class="header__time"></p>
 </footer>
     <script type="module" src="./Scripts/api.js"></script>
     <script type="module" src="./Scripts/index.js"></script>

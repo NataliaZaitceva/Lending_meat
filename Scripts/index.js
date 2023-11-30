@@ -1,4 +1,31 @@
-"use strict";
+console.log('привет')
+//import '../vendor/vendor.css'
+
+import { Popup } from "./Popup.js";
+
+const popupWithForm = new Popup({
+    popupSelector:'#popupcontainer',
+
+  })
+
+const btnOpenPopup = document.querySelector(".btn__view_about");
+
+popupWithForm.setEventListeners()
+
+
+btnOpenPopup.addEventListener("click", () => {
+  popupWithForm.open()
+  console.log('тык')
+});
+
+
+
+  const popupConfirmation = new Popup({
+    popupSelector: "#popupconfirm"
+  })
+
+
+popupConfirmation.setEventListeners()
 
 document.addEventListener("DOMContentLoaded", function () {
   const messageForm = document.querySelector(".popup__form");
@@ -9,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const numberInput = document.getElementById("formNumber");
   const textInput = document.getElementById("formText");
   const formInput = document.querySelector(".popup__form-input");
+
+  
 
   function handlerInputForm(e) {
     const currentForm = e.currentTarget;
@@ -82,10 +111,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (response.ok) {
       if (form.checkValidity()) {
-        alert("Спасибо за ваше сообщение! Мы перезвоним вам в ближайшее время");
+        
+      popupConfirmation.open()
+    
         form.reset();
       } else {
-        alert("заполните форму");
+        alert("Пожалуйста, заполните все обязательные поля");
       }
     } else {
       console.log("не успешно");
@@ -96,41 +127,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-const btnOpenPopup = document.querySelector(".btn__view_about");
-const popup = document.querySelector(".popup");
+//const popup = document.querySelector(".popup");
 const btnClosePopup = document.querySelector(".btn__view_close");
 const btnToSend = document.querySelector(".btn__view_send");
 
-function openPopup() {
+/*function openPopup() {
   popup.classList.add("popup__opened");
-}
+  console.log('opened')
+}*/
 
-btnOpenPopup.addEventListener("click", openPopup);
 
-function closePopup() {
+
+/*function closePopup() {
   popup.classList.remove("popup__opened");
 }
 
-btnClosePopup.addEventListener("click", closePopup);
+btnClosePopup.addEventListener("click", closePopup);*/
 
-function showTime(msg) {
-  const data = document.querySelector(".header__time");
-  let today = new Date();
-  let now = today.toLocaleTimeString();
-  data.innerHTML += `${now}`;
-}
 
-showTime();
 
-function showYear() {
-  let options = {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  };
-  const year = document.querySelector(".header__data");
-  let d = new Date();
-  let now = d.toLocaleString("ru", options);
-  year.innerHTML += `${now}`;
-}
-showYear();

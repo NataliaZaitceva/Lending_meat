@@ -1,0 +1,6 @@
+.gallery__image-active {
+   width: 300px;
+ 
+padding: 0 50px;
+    transform: scale(1.5);
+}

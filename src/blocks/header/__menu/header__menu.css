@@ -1,5 +1,8 @@
 .header__menu {
     width: 100%;
       display: flex;
-      margin: 20px;
+   margin: 0;
+   padding: 0;
+      text-align: center;
+      justify-content: center;
     }
